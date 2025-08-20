@@ -1,4 +1,4 @@
-@set iasver=1.0
+@set iasver=1.01
 @setlocal DisableDelayedExpansion
 @echo off
 
@@ -6,7 +6,7 @@
 
 ::============================================================================
 ::
-::   IDM Activation 
+::   letr-0vangIDM
 ::
 ::   CREDITS: IG: @lil.haize
 ::
@@ -29,9 +29,9 @@ set _reset=0
 
 ::  Set Path variable, it helps if it is misconfigured in the system
 
-set "PATH=%SystemRoot%\System32;%SystemRoot%\System32\wbem;%SystemRoot%\System32\WindowsPowerShell\v1.0\"
+set "PATH=%SystemRoot%\System32;%SystemRoot%\System32\wbem;%SystemRoot%\System32\WindowsPowerShell\v1.01\"
 if exist "%SystemRoot%\Sysnative\reg.exe" (
-set "PATH=%SystemRoot%\Sysnative;%SystemRoot%\Sysnative\wbem;%SystemRoot%\Sysnative\WindowsPowerShell\v1.0\;%PATH%"
+set "PATH=%SystemRoot%\Sysnative;%SystemRoot%\Sysnative\wbem;%SystemRoot%\Sysnative\WindowsPowerShell\v1.01\;%PATH%"
 )
 
 :: Re-launch the script with x64 process if it was initiated by x86 process on x64 bit Windows
@@ -94,7 +94,7 @@ popd
 
 cls
 color 07
-title  IDM-Activation %iasver%
+title  IDeMo %iasver%
 
 set _args=
 set _elev=
@@ -263,7 +263,7 @@ if defined quedit goto :skipQE
 ::========================================================================================================================================
 
 cls
-title  IDM-Activation %iasver%
+title  IDeMo %iasver%
 
 echo:
 echo Initializing...
@@ -362,7 +362,7 @@ if %_freeze%==1 (set frz=1&goto :_activate)
 :MainMenu
 
 cls
-title  IDM-Activation %iasver%
+title  IDeMo %iasver%
 if not defined terminal mode 75, 28
 
 echo:
@@ -571,7 +571,7 @@ echo:
 echo %line%
 echo:
 if %frz%==0 (
-call :_color %Green% "The IDM Activation process has been completed."
+call :_color %Green% "The letr-0ngvangIDM process has been completed."
 echo:
 call :_color %Gray% "If the fake serial screen appears, use the Freeze Trial option instead."
 ) else (
