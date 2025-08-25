@@ -1,3 +1,7 @@
+## Before starting
+- Uninstall your IDM
+- Follow the instruction in the lastest release [1.0](https://github.com/letr0ngvang/letr-0ngvangidm/releases/tag/1.0)
+
 ## WHAT IT DOES
 - Demonstrates how a demo installer behaves when downloaded and executed.
 - Shows how registry keys (HKEY) can be hooked in order to monitor and simulate modifications.
@@ -19,7 +23,7 @@
 
 **Safety & Responsibility**
 
-- Prefer running inside a VM/sandbox.
+- Prefer running inside a VM/sandbox if you don't trust this.
 
 - Use at your own risk. You are solely responsible for any misuse or policy violations.
 
